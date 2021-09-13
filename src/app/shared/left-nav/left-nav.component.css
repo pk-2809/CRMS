@@ -1,0 +1,59 @@
+.main-container-left
+{
+    height:100vh;
+    background: rgb(158, 204, 204);
+}
+.icon-container
+{
+    height:95vh;
+    width:105px;
+    background: #C4D3F9;
+    border-radius: 10px 0px 0px 10px;
+}
+.profile-btn
+{
+    margin-top: 20px;
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    background: #51459D;
+}
+.profile-btn svg
+{
+    padding:10px;
+}
+.icon-btn
+{
+    border-radius: 10px;
+    background: #fff;
+    margin:30px 15px 30px 15px;
+}
+.icon-btn svg
+{
+    padding: 10px;
+    width: 25px;
+    height:25px;
+}
+.icon-list
+{
+    padding-top: 20px;
+    overflow-y: scroll;
+}
+.icon-btn:focus
+{
+    background: #51459D;
+}
+.icon-btn:focus svg path
+{
+    fill:#fff;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+.logout
+{
+    width: 25px;
+    height:25px;
+}

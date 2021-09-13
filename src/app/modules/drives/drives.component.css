@@ -1,0 +1,17 @@
+.table
+{
+    height: 430px;
+    overflow: auto;
+}
+table{
+    width: 100%;
+}
+.action svg
+{
+    width:30px;
+    height:30px;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}

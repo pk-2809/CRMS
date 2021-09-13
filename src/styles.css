@@ -1,0 +1,129 @@
+/* You can add global styles to this file, and also import other style files */
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.mat-form-field-appearance-outline .mat-form-field-outline-thick .mat-form-field-outline-start
+{
+    width:50px;
+    border-radius: 20px;
+}
+.mat-form-field-appearance-outline .mat-form-field-outline .mat-form-field-outline-thick {
+    color: rgba(158, 45, 45, 0.87);
+    min-width:25px ;
+}
+.mat-form-field-appearance-outline .mat-form-field-outline .mat-form-field-outline-start {
+    border-radius: 25px 0 0 25px;
+    border-right-style: none;
+    min-width:25px ;
+}
+.mat-form-field-appearance-outline .mat-form-field-outline .mat-form-field-outline-end
+{
+    border-radius: 0px 25px 25px 0px;
+}
+.mat-form-field-appearance-outline .mat-form-field-outline .mat-form-field-outline-start, .mat-form-field-appearance-outline .mat-form-field-outline .mat-form-field-outline-gap, .mat-form-field-appearance-outline .mat-form-field-outline .mat-form-field-outline-end
+{
+    /* border: 3px solid #d36262; */
+    border-top-color: #d36262;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: #d36262;
+    /* border-right-style: solid; */
+    border-right-width: 1px;
+    border-bottom-color: #d36262;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: #d36262;
+    /* border-left-style: solid; */
+    border-left-width: 1px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+}
+.mat-card:not([class*=mat-elevation-z])
+{
+    border-radius: 32px;
+  /* background: linear-gradient(225deg, #ccc8c8, #f3eeee); */
+  box-shadow:  -20px 20px 45px #fff,
+               20px -20px 45px #fff;
+}
+
+.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label, .mat-form-field-appearance-outline.mat-form-field-can-float .mat-input-server:focus+.mat-form-field-label-wrapper .mat-form-field-label
+{
+transform: translate(10px,-1.3em) scale(0.75);
+}
+input.mat-input-element {
+    position:relative;
+    margin:0px 0px 0px 10px;
+}
+.mat-form-field-appearance-outline .mat-form-field-infix {
+    padding: 4px 0px 1em 0px;
+}
+.mat-form-field-appearance-outline .mat-form-field-label {
+    top: 1.4em;
+    margin-top: -0.25em;
+    margin-left: 10px;
+}
+.mat-form-field-label
+{
+    color: cadetblue;
+}
+.mat-form-field.mat-focused .mat-form-field-label
+{
+    color: rgb(255, 0, 200);
+}
+.mat-hint
+{
+    color: rgb(83, 255, 15);
+}
+.mat-form-field-wrapper
+{
+    width:70%;
+}
+.mat-button
+{
+    width:40%;
+    background: rgb(233, 217, 203);
+}
+.mat-button.mat-accent, .mat-icon-button.mat-accent, .mat-stroked-button.mat-accent {
+    color: #272723;
+}
+.mat-button.mat-accent .mat-button-focus-overlay {
+    background-color: #dad603;
+  }
+.mat-hint a
+{
+    color: sandybrown;
+    text-decoration:none;
+}
+.mat-body p, .mat-body-1 p, .mat-typography p {
+    margin: 0 0 0 0px;
+}
+.main-container
+{
+    height: 100vh;
+    background: rgb(158, 204, 204);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.container{
+    height:95vh;
+    background: rgb(169, 171, 179);
+    margin-right: 20px;
+    width:100%;
+    border-radius: 0px 10px 10px 0px;
+    /* border-radius: 50px; */
+    /* background: #9c91e0;
+    box-shadow:  inset 25px 25px 35px #51459D,
+    inset -25px -25px 35px #51459D; */
+}
+/* .content-wrapper
+{
+    height:87vh;
+    background: rgb(217, 219, 230);
+    border-radius: 0px 10px 10px 0px;
+    width:95%;
+    /* border-radius: 18px; */
+    /* background: #a9abb3; */
+    
+/* } */ 

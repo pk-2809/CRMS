@@ -1,0 +1,55 @@
+<div class="container"  fxLayout="row" fxLayoutAlign="center center">
+<div class="temp" fxLayout="row" fxLayoutAlign="space-around center">
+    <mat-card class="leftcard">
+        <div class="left-card-header" fxLayout="column" fxLayoutAlign="center center">
+            <h1>Hey!</h1>
+            <h1>Welcome</h1>
+            <h1>To</h1>
+            <h1>CRS</h1>
+            <div class="login-svg">
+            <svg baseProfile="tiny" height="30px" id="Layer_1" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg"><path d="M13,5.499c-0.256,0-0.512,0.097-0.707,0.292C12.098,5.987,12,6.243,12,6.499v2.559c-4.5,0.498-8,4.309-8,8.941v1  c2.245-3.423,5.25-3.92,8-3.989v2.489c0,0.255,0.098,0.512,0.293,0.707s0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293L20,11.999  l-6.293-6.208C13.512,5.596,13.256,5.499,13,5.499z"/></svg>
+        </div>
+    </div>
+    </mat-card>
+    <mat-card>
+        <mat-card-header fxLayoutAlign="none center">
+          <div mat-card-avatar><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+            <style type="text/css">
+                .st0{fill:#32BEA6;}
+                .st1{fill:#F0F1F1;}
+                .st2{fill:#FFFFFF;}
+                .st3{fill:#FACB1B;}
+                .st4{fill:#818284;}
+                .st5{fill:#692E19;}
+            </style>
+            <g id="XMLID_1_">
+                <circle id="XMLID_3_" class="st0" cx="256" cy="256" r="256"/>
+                <path id="XMLID_4_" class="st1" d="M404.9,241.8c0-27.6-16.5-50.4-41-60.7c-18.9-46.5-49.6-65.4-87.4-65.4   c-35.4,0-66.2,20.5-81.1,49.6c-4.7-1.6-9.5-3.2-15-3.2c-19.7,0-36.2,15.8-37,35.4c-22.1,7.9-37,28.4-37,52.8   c0,30.7,25.2,55.9,55.9,55.9h185.9C348.9,307.2,404.9,297,404.9,241.8z"/>
+                <path id="XMLID_5_" class="st2" d="M277.3,116.6c-35.4,0-66.2,20.5-81.1,49.6c-23.6-10.2-50.4,7.1-52,33.1   c-22.1,7.9-37,28.4-37,52.8c0,29.1,22.8,53.6,51.2,55.9l172.5-172.5C315.1,122.1,297,116.6,277.3,116.6z"/>
+                <path id="XMLID_6_" class="st3" d="M179.6,387.5c0,9.5,7.9,17.3,17.3,17.3h119.7c9.5,0,17.3-7.9,17.3-17.3v-85.1   c0-9.5-7.9-17.3-17.3-17.3H196.1c-9.5,0-17.3,7.9-17.3,17.3v85.1H179.6z"/>
+                <path id="XMLID_7_" class="st4" d="M311.1,285.1h-26V256c0-16.5-13.4-29.9-29.9-29.9s-29.9,13.4-29.9,29.9v29.9h-24.4V256   c0-30.7,25.2-55.1,55.1-55.1c30.7,0,55.1,25.2,55.1,55.1V285.1z"/>
+                <path id="XMLID_8_" class="st5" d="M267.8,325.3c0-7.9-6.3-14.2-14.2-14.2s-14.2,6.3-14.2,14.2c0,5.5,3.2,10.2,7.9,12.6l-7.9,41   h28.4l-7.9-41C264.7,335.6,267.8,330.8,267.8,325.3z"/>
+            </g>
+            </svg></div>
+            <div class="cardHeader" fxLayout="column" fxLayoutAlign="center center">
+          <h1>Login</h1>
+          <p>Enter the credentials here</p>
+        </div>
+        </mat-card-header>
+        <mat-card-content fxLayout="column">
+            <mat-form-field class="inputs" appearance="outline" fxLayoutAlign="center">
+                <mat-label>Username</mat-label>
+                <input matInput placeholder="Enter Username" value="" >
+            </mat-form-field>
+            <mat-form-field class="inputs" appearance="outline" fxLayoutAlign="center">
+                <mat-label>Password</mat-label>
+                <input matInput placeholder="Enter Password" value="">
+                <mat-hint align="end"><a href="#">Forgot Password ?</a></mat-hint>
+            </mat-form-field>
+            <div class="login-btn" fxLayoutAlign="center">
+            <button mat-button color="accent"(click)="checkLogin()">Login</button>
+        </div>
+        </mat-card-content>
+      </mat-card>
+</div>
+</div>
