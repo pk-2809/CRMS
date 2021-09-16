@@ -1,129 +1,143 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* -------------------------- Common Component ------------------------------*/
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-.mat-form-field-appearance-outline .mat-form-field-outline-thick .mat-form-field-outline-start
+.mat-form-field-appearance-outline .mat-form-field-infix {
+    padding:10px 0px 10px 0px;
+    }
+    .mat-form-field-appearance-outline .mat-form-field-prefix, .mat-form-field-appearance-outline .mat-form-field-suffix
+    { top:0px;}
+    .main-container
+    {
+        height: 100vh;
+        background: rgb(158, 204, 204);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .container{
+        height:95vh;
+        background: rgb(169, 171, 179);
+        margin-right: 20px;
+        width:100%;
+        border-radius: 0px 10px 10px 0px;
+    }
+    .mat-card
+    {
+        height:65%;
+        background-color: #C4D3F9;
+        padding: 0px !important;
+    }
+    mat-card-header
+    {
+      height: 30%;
+    }
+    .mat-card-header-text
+    {
+        margin:0px !important;
+    }
+    .mat-button
+    {
+        background: #C4D3F9;
+    }
+     .mat-icon-button, .mat-stroked-button {
+        color: #fff;
+    }
+    .mat-button .mat-button-focus-overlay {
+        background-color: #fff;
+      }
+    .mat-card-content
+    {
+        margin: 0px;
+    }
+
+/* -------------------------- Login Component ------------------------------*/
+
+.right-card
 {
-    width:50px;
-    border-radius: 20px;
+    width:30%;
+    border-radius: 15px !important;
+    background: #51469D;
+    border: 3px solid #fff;
 }
-.mat-form-field-appearance-outline .mat-form-field-outline .mat-form-field-outline-thick {
-    color: rgba(158, 45, 45, 0.87);
-    min-width:25px ;
-}
-.mat-form-field-appearance-outline .mat-form-field-outline .mat-form-field-outline-start {
-    border-radius: 25px 0 0 25px;
-    border-right-style: none;
-    min-width:25px ;
-}
-.mat-form-field-appearance-outline .mat-form-field-outline .mat-form-field-outline-end
+.login-wrap
 {
-    border-radius: 0px 25px 25px 0px;
-}
-.mat-form-field-appearance-outline .mat-form-field-outline .mat-form-field-outline-start, .mat-form-field-appearance-outline .mat-form-field-outline .mat-form-field-outline-gap, .mat-form-field-appearance-outline .mat-form-field-outline .mat-form-field-outline-end
-{
-    /* border: 3px solid #d36262; */
-    border-top-color: #d36262;
-    border-top-style: solid;
-    border-top-width: 1px;
-    border-right-color: #d36262;
-    /* border-right-style: solid; */
-    border-right-width: 1px;
-    border-bottom-color: #d36262;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-left-color: #d36262;
-    /* border-left-style: solid; */
-    border-left-width: 1px;
-    border-image-source: initial;
-    border-image-slice: initial;
-    border-image-width: initial;
-    border-image-outset: initial;
-    border-image-repeat: initial;
-}
-.mat-card:not([class*=mat-elevation-z])
-{
-    border-radius: 32px;
-  /* background: linear-gradient(225deg, #ccc8c8, #f3eeee); */
-  box-shadow:  -20px 20px 45px #fff,
-               20px -20px 45px #fff;
+    height:100vh;
+    background-color: #51469D;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23C4D3F9'/%3E%3Cstop offset='1' stop-color='%2351469D'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23FFFFFF' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FFFFFF' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label, .mat-form-field-appearance-outline.mat-form-field-can-float .mat-input-server:focus+.mat-form-field-label-wrapper .mat-form-field-label
+.inputs input
 {
-transform: translate(10px,-1.3em) scale(0.75);
+    caret-color: rgb(255, 255, 255);
 }
-input.mat-input-element {
-    position:relative;
-    margin:0px 0px 0px 10px;
-}
-.mat-form-field-appearance-outline .mat-form-field-infix {
-    padding: 4px 0px 1em 0px;
-}
-.mat-form-field-appearance-outline .mat-form-field-label {
-    top: 1.4em;
-    margin-top: -0.25em;
-    margin-left: 10px;
-}
-.mat-form-field-label
-{
-    color: cadetblue;
-}
-.mat-form-field.mat-focused .mat-form-field-label
-{
-    color: rgb(255, 0, 200);
-}
-.mat-hint
-{
-    color: rgb(83, 255, 15);
-}
-.mat-form-field-wrapper
+.inputs
 {
     width:70%;
 }
-.mat-button
+.inputs .mat-form-field-wrapper
 {
-    width:40%;
-    background: rgb(233, 217, 203);
-}
-.mat-button.mat-accent, .mat-icon-button.mat-accent, .mat-stroked-button.mat-accent {
-    color: #272723;
-}
-.mat-button.mat-accent .mat-button-focus-overlay {
-    background-color: #dad603;
-  }
-.mat-hint a
-{
-    color: sandybrown;
-    text-decoration:none;
-}
-.mat-body p, .mat-body-1 p, .mat-typography p {
-    margin: 0 0 0 0px;
-}
-.main-container
-{
-    height: 100vh;
-    background: rgb(158, 204, 204);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-.container{
-    height:95vh;
-    background: rgb(169, 171, 179);
-    margin-right: 20px;
     width:100%;
-    border-radius: 0px 10px 10px 0px;
-    /* border-radius: 50px; */
-    /* background: #9c91e0;
-    box-shadow:  inset 25px 25px 35px #51459D,
-    inset -25px -25px 35px #51459D; */
 }
-/* .content-wrapper
+.inputs .mat-form-field-appearance-outline .mat-form-field-outline-thick .mat-form-field-outline-start, .mat-form-field-appearance-outline .mat-form-field-outline .mat-form-field-outline-start, .mat-form-field-appearance-outline .mat-form-field-outline .mat-form-field-outline-gap, .mat-form-field-appearance-outline .mat-form-field-outline .mat-form-field-outline-end
 {
-    height:87vh;
-    background: rgb(217, 219, 230);
-    border-radius: 0px 10px 10px 0px;
-    width:95%;
-    /* border-radius: 18px; */
-    /* background: #a9abb3; */
-    
-/* } */ 
+    border-top-color: #ffffff;
+    border-right-color: #ffffff;
+    border-bottom-color: #ffffff;
+    border-left-color: #ffffff;
+}
+.input-label,.inputs .mat-input-element, .input-label a
+{
+    color:#ffffff;
+    padding-bottom: 5px;
+}
+.login-btn
+{
+    width:70%;
+    font-size: 15px;
+    color:rgb(110, 110, 110);
+    margin-top: 5%;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #51469D inset !important;
+    -webkit-text-fill-color: rgb(255, 255, 255) !important;
+}
+.pre-input svg
+{
+    width: 30px;
+    height:30px;
+    margin-right: 5px;
+}
+.cardHeader
+{
+  height: 100%;
+  width: 80%;
+  color:#fff;
+}
+.cardHeader h1, p
+{
+  margin:0px;
+}
+.cardHeader h1
+{
+  font-size: 47px;
+  font-weight: 500;
+  margin: 0px 0px 10px -10px;
+}
+.cardHeader p
+{
+  position: absolute;
+  font-size: 10px;
+  margin: 58px 0px 0px -8px;
+}
+
+/* .drives-total
+{
+    border-radius: 20px !important;
+    box-shadow:  -10px 10px 25px rgb(209, 209, 209),
+               10px -10px 25px rgb(209, 209, 209) !important;
+} */

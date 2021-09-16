@@ -1,75 +1,32 @@
-.container
+/* .container
 {
   height:100vh;
   background: #c7c2c2;
-}
-.temp
-{
-  /* background-color:blue ; */
-  width: 80%;
-  height: 80%;
-  border-radius: 40px;
-  background:#fff;
-  background: linear-gradient(225deg, #cacaca, #f0f0f0);
-  box-shadow:  -20px 20px 60px #e4d4d4,
-             20px -20px 60px #e4d4d4;
-}
-mat-card
-{
-  padding: 0px;
-  border-radius: 40px;
-  width: 40%;
-  height:70%;
-  margin: 0% 8%;
-}
-.leftcard
-{
-  width: 25%;
-}
-mat-card-header
-{
-  height: 30%;
-  border-radius: 15px 15px 0px 0px;
-  background-color: #3F3D56;
-}
-.mat-card-avatar
+} */
+
+  /* border-radius: 15px 15px 0px 0px;
+  background: rgba( 255, 255, 255, 0 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 0px );
+-webkit-backdrop-filter: blur( 0px ); */
+/* border-radius: 10px; */
+/* .mat-card-avatar
 {
   width: 70px;
   height:70px;
   margin-left: 60px;
-}
-.cardHeader
-{
-  height: 100%;
-  width: 80%;
-  color:#fff;
-}
-.cardHeader h1, p
-{
-  margin:0px;
-}
-.cardHeader h1
-{
-  font-size: 47px;
-  font-weight: 500;
-  margin: 0px 0px 10px -10px;
-}
-.cardHeader p
-{
-  position: absolute;
-  font-size: 10px;
-  margin: 58px 0px 0px -8px;
-}
-mat-form-field
+} */
+
+/* mat-form-field
 {
   padding-top: 5px;
   width:100%;
-}
-.mat-card-content, .login-btn
+} */
+/* .mat-card-content, .login-btn
 {
   margin-top: 5%;
-}
-.left-card-header h1{
+} */
+/* .left-card-header h1{
   text-align: center;
   font-size: 47px;
   font-weight: 500;
@@ -78,8 +35,8 @@ mat-form-field
 {
   height:100%;
   border-radius: 15px 15px 0px 0px;
-}
-.login-svg
+} */
+/* .login-svg
 {
   margin-top: 10%;
   width: 35px;
@@ -92,4 +49,4 @@ box-shadow:  5px 5px 9px #1e485c,
 .login-svg svg
 {
   margin-left: 10%;
-}
+} */
