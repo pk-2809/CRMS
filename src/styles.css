@@ -2,54 +2,105 @@
 
 /* -------------------------- Common Component ------------------------------*/
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.mat-typography h1
+{
+    margin: 0px;
+    font-size: 35px;
+    font-weight: 600;
+}
+.h-w-100
+{
+    height: 100%;
+    width:100%;
+}
 .mat-form-field-appearance-outline .mat-form-field-infix {
     padding:10px 0px 10px 0px;
     }
-    .mat-form-field-appearance-outline .mat-form-field-prefix, .mat-form-field-appearance-outline .mat-form-field-suffix
-    { top:0px;}
-    .main-container
-    {
-        height: 100vh;
-        background: rgb(158, 204, 204);
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
+.mat-form-field-appearance-outline .mat-form-field-prefix, .mat-form-field-appearance-outline .mat-form-field-suffix
+{ top:0px;}
+.main-container
+{
+    height: 100vh;
+    background: rgb(158, 204, 204);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.container{
+    height:95vh;
+    background: #b5afdfb7;
+    margin-right: 20px;
+    width:100%;
+    border-radius: 0px 10px 10px 0px;
+}
+.mat-card
+{
+    height:65%;
+    background-color: #C4D3F9;
+    padding: 0px !important;
+    border-radius: 10px !important;
+}
+mat-card-header
+{
+    height: 30%;
+}
+.mat-card-header-text
+{
+    margin:0px !important;
+}
+.mat-button
+{
+    background: #C4D3F9;
+}
+    .mat-icon-button, .mat-stroked-button {
+    color: #fff;
+}
+.mat-button .mat-button-focus-overlay {
+    background-color: #fff;
     }
-    .container{
-        height:95vh;
-        background: rgb(169, 171, 179);
-        margin-right: 20px;
-        width:100%;
-        border-radius: 0px 10px 10px 0px;
-    }
-    .mat-card
-    {
-        height:65%;
-        background-color: #C4D3F9;
-        padding: 0px !important;
-    }
-    mat-card-header
-    {
-      height: 30%;
-    }
-    .mat-card-header-text
-    {
-        margin:0px !important;
-    }
-    .mat-button
-    {
-        background: #C4D3F9;
-    }
-     .mat-icon-button, .mat-stroked-button {
-        color: #fff;
-    }
-    .mat-button .mat-button-focus-overlay {
-        background-color: #fff;
-      }
-    .mat-card-content
-    {
-        margin: 0px;
-    }
+.mat-card-content
+{
+    margin: 0px;
+}
+/* -------------------------- Mat-Table ------------------------------*/
+.mat-table
+{
+    background-color: transparent;
+    overflow: scroll;
+}
+.mat-table th
+{
+    background-color: #51469D;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+.mat-table tr.mat-header-row
+{
+    height:45px;
+}
+.mat-row:nth-child(n) {
+    background-color: #ffffff;
+  }
+.mat-row:nth-child(2n) {
+    background-color: #C4D3F9;
+  }
+.mat-table tr.mat-row
+{
+    height:40px;
+}
+.table-wrap
+{
+    height:400px;
+    overflow: auto;
+    width:97%;
+    border-radius: 10px;
+}
+.mat-header-cell:first-child {
+    border-top-left-radius: 10px;
+  }
+  .mat-header-cell:last-child {
+    border-top-right-radius: 10px;
+  }
 
 /* -------------------------- Login Component ------------------------------*/
 
@@ -141,3 +192,45 @@ input:-webkit-autofill {
     box-shadow:  -10px 10px 25px rgb(209, 209, 209),
                10px -10px 25px rgb(209, 209, 209) !important;
 } */
+
+.header-wrap
+{
+    height:25vh;
+}
+.heading h1
+{
+    margin-bottom:15px;
+}
+.drive-head-card
+{
+    width:230px;
+    margin-right:2.2%;
+    padding:10px 20px !important;
+}
+.active-spin .mat-spinner circle {
+    stroke: #3fb53f;
+    }
+.in-active-spin .mat-spinner circle
+{
+    stroke: #e05138;
+}
+.spinner-text
+{
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    overflow: hidden;
+    border-color: #4ab6404f;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 7.5px;
+}
+.in-active-spin .spinner-text {
+    border-color: rgba(255, 0, 43, 0.178);
+}
+.active-spin, .in-active-spin
+{
+    margin-left:15%;
+}
