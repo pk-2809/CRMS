@@ -4,9 +4,12 @@
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mat-typography h1
 {
-    margin: 0px;
     font-size: 35px;
     font-weight: 600;
+}
+.mat-typography h1,.mat-typography h2,.mat-typography h3,.mat-typography h4,.mat-typography h5,.mat-typography h6,.mat-typography p
+{
+    margin: 0px;
 }
 .h-w-100
 {
@@ -28,22 +31,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 .container{
     height:95vh;
-    background: #B2BDEB;
+    background: #D9E1F7;
     margin-right: 20px;
     width:100%;
     border-radius: 0px 10px 10px 0px;
 }
-.mat-card
-{
-    height:65%;
-    background-color: #C4D3F9;
-    padding: 0px !important;
-    border-radius: 10px !important;
-}
-mat-card-header
-{
-    height: 30%;
-}
+
 .mat-card-header-text
 {
     margin:0px !important;
@@ -61,6 +54,11 @@ mat-card-header
 .mat-card-content
 {
     margin: 0px;
+}
+.mat-card
+{
+    border-radius: 8px !important;
+    padding: 0px !important;
 }
 /* -------------------------- Mat-Table ------------------------------*/
 table{
@@ -99,7 +97,7 @@ table{
 }
 .data-table
 {
-    height:300px;
+    height:349px;
     overflow: auto;
     width:auto;
 }
@@ -119,7 +117,7 @@ table{
   .table-footer .mat-paginator
   {
     background: #51469D;
-    height:38px;    
+    height:40px;    
 }
 .mat-paginator, .mat-paginator-page-size .mat-select-trigger {
     color: rgb(255 255 255);
@@ -136,6 +134,42 @@ table{
 .table-footer .mat-paginator-container {
     min-height: 40px;
 }
+/* .body-wrap
+{
+    height:80%;
+} */
+/* -------------------------------------- Cards Component -------------------------------------*/
+.card-wrap
+{
+    /* background:rgb(148, 92, 92); */
+    height: 420px;
+    /* overflow: scroll; */
+    border-radius: 8px;
+    margin: 1.5%;
+    border: 2px solid #51469D;
+    flex-wrap: wrap;
+    /* padding-top: 5px; */
+    /* align-content: flex-end; */
+}
+.drive-card
+{
+    width:23.6%;
+    margin: 0.7%;
+}
+.drive-card-circle
+{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    margin: 0px 10px 0px 5px;
+    background: #52469d73;
+}
+.card-footer
+{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
 /* ------------------------------------------ Search Box ---------------------------------------*/
 .search-box .mat-form-field-wrapper .mat-form-field-underline::before, .search-box .mat-form-field-wrapper .mat-form-field-underline .mat-form-field-ripple
   {
@@ -146,7 +180,11 @@ table{
       padding: 0px 0px 0px 10px;
       border-radius: 8px;
       background:#fff;
-      
+  }
+  .mat-form-field-wrapper .mat-form-field-flex .mat-form-field-infix
+  {
+    border:0px;
+    padding-right: 20px;
   }
   .search-box .mat-form-field-wrapper
   {
@@ -156,6 +194,7 @@ table{
   {
       margin:1.5% 1.5% 0% 1.5%;
       color: #51469D;
+      width: 200px;
   }
   .post-input-search
   {
@@ -165,14 +204,28 @@ table{
     color: #51469D;
       /* margin: 10px 10px 0px 0px; */
   }
-/* --------------------------------------- Login Component -------------------------------------*/
+  .search-box input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
+    -webkit-text-fill-color: #51469D !important;
+}
 
+/* --------------------------------------- Login Component -------------------------------------*/
 .right-card
 {
     width:30%;
     border-radius: 15px !important;
     background: #51469D;
     border: 3px solid #fff;
+}
+.right-card.mat-card
+{
+    height:65%;
+    /* background-color: #C4D3F9; */
+    border-radius: 10px;
+}
+.right-card mat-card-header
+{
+    height: 30%;
 }
 .login-wrap
 {
@@ -216,7 +269,7 @@ table{
     margin-top: 5%;
 }
 
-input:-webkit-autofill {
+.inputs input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px #51469D inset !important;
     -webkit-text-fill-color: rgb(255, 255, 255) !important;
 }
