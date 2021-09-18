@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LeftNavComponent } from './left-nav/left-nav.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { TableModule } from "../shared/components/table/table.module";
+
 @NgModule({
   declarations: [
     LeftNavComponent,
@@ -9,10 +11,12 @@ import { FlexLayoutModule } from '@angular/flex-layout';
   imports: [
     CommonModule,
     FlexLayoutModule,
+    TableModule,
   ],
-  exports:[
+  exports: [
     LeftNavComponent,
     FlexLayoutModule,
+    TableModule,
   ]
 })
 export class SharedModule { }

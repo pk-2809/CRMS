@@ -21,14 +21,14 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .main-container
 {
     height: 100vh;
-    background: rgb(158, 204, 204);
+    background: #fff;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 .container{
     height:95vh;
-    background: #b5afdfb7;
+    background: #B2BDEB;
     margin-right: 20px;
     width:100%;
     border-radius: 0px 10px 10px 0px;
@@ -63,10 +63,13 @@ mat-card-header
     margin: 0px;
 }
 /* -------------------------- Mat-Table ------------------------------*/
+table{
+    width: 100%;
+}
 .mat-table
 {
     background-color: transparent;
-    overflow: scroll;
+    /* overflow: scroll; */
 }
 .mat-table th
 {
@@ -86,23 +89,83 @@ mat-card-header
   }
 .mat-table tr.mat-row
 {
-    height:40px;
+    height:38px;
 }
 .table-wrap
 {
-    height:400px;
+    border-radius: 8px;
+    margin: 1.5%;
+    border: 2px solid #51469D;
+}
+.data-table
+{
+    height:300px;
     overflow: auto;
-    width:97%;
-    border-radius: 10px;
+    width:auto;
 }
 .mat-header-cell:first-child {
-    border-top-left-radius: 10px;
+    /* margin-left:2px; */
+    /* border-top-left-radius: 8px; */
   }
   .mat-header-cell:last-child {
-    border-top-right-radius: 10px;
+    /* padding-right:12px; */
+    /* border-top-right-radius: 8px; */
   }
+  .action svg
+  {
+      width:25px;
+      height:25px;
+  }
+  .table-footer .mat-paginator
+  {
+    background: #51469D;
+    height:38px;    
+}
+.mat-paginator, .mat-paginator-page-size .mat-select-trigger {
+    color: rgb(255 255 255);
+}
+.table-footer .mat-icon-button.mat-button-disabled.mat-button-disabled {
 
-/* -------------------------- Login Component ------------------------------*/
+    color: rgba(255, 255, 255, 0.342);
+}
+  /* .mat-paginator-container {
+    min-height: 45px;
+    height: 45px;
+    position: sticky;
+} */
+.table-footer .mat-paginator-container {
+    min-height: 40px;
+}
+/* ------------------------------------------ Search Box ---------------------------------------*/
+.search-box .mat-form-field-wrapper .mat-form-field-underline::before, .search-box .mat-form-field-wrapper .mat-form-field-underline .mat-form-field-ripple
+  {
+    height: 0px;
+  }
+  .search-box .mat-form-field-wrapper, .search-box .mat-form-field-wrapper .mat-form-field-flex
+  {
+      padding: 0px 0px 0px 10px;
+      border-radius: 8px;
+      background:#fff;
+      
+  }
+  .search-box .mat-form-field-wrapper
+  {
+    border: 2px solid #51469D;
+  }
+  .search-box
+  {
+      margin:1.5% 1.5% 0% 1.5%;
+      color: #51469D;
+  }
+  .post-input-search
+  {
+      position: relative;
+    top:5px;
+    right:10px;
+    color: #51469D;
+      /* margin: 10px 10px 0px 0px; */
+  }
+/* --------------------------------------- Login Component -------------------------------------*/
 
 .right-card
 {
@@ -195,7 +258,7 @@ input:-webkit-autofill {
 
 .header-wrap
 {
-    height:25vh;
+    height:15vh;
 }
 .heading h1
 {
