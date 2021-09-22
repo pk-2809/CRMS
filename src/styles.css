@@ -1,5 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
+/* #E24439 , #F5736F */
+
+
 /* -------------------------- Common Component ------------------------------*/
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mat-typography h1
@@ -15,6 +18,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 {
     height: 100%;
     width:100%;
+}
+.w-100
+{
+    width: 100%;
 }
 .mat-form-field-appearance-outline .mat-form-field-infix {
     padding:10px 0px 10px 0px;
@@ -154,6 +161,7 @@ table{
 .drive-card
 {
     width:23.6%;
+    height: 25.5%;
     margin: 0.7%;
 }
 .drive-card-circle
@@ -192,7 +200,7 @@ table{
   }
   .search-box
   {
-      margin:1.5% 1.5% 0% 1.5%;
+    margin: 1.5% 9.5% 0% 1.5%;
       color: #51469D;
       width: 200px;
   }
@@ -208,6 +216,20 @@ table{
     -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
     -webkit-text-fill-color: #51469D !important;
 }
+/* ------------------------------------------ Filter Box ---------------------------------------*/
+.filter-box
+{
+    cursor:pointer;
+    margin: 1.5% 3% 0% 1.5%;
+    border: 2px solid #51469D;
+    border-radius: 8px;
+    background: #fff;
+}
+.filter-box svg
+{
+    padding:9px;
+}
+
 
 /* --------------------------------------- Login Component -------------------------------------*/
 .right-card
@@ -312,16 +334,19 @@ table{
 .header-wrap
 {
     height:15vh;
+    margin-right:1.7%;
 }
 .heading h1
 {
-    margin-bottom:15px;
-}
+    margin-left:10%;
+    /* margin-bottom:15px; */
+} 
 .drive-head-card
 {
-    width:230px;
-    margin-right:2.2%;
-    padding:10px 20px !important;
+    position: absolute;
+    top:25%;
+    height: 15vh;
+    width: 30%;
 }
 .active-spin .mat-spinner circle {
     stroke: #3fb53f;
@@ -341,12 +366,12 @@ table{
     border-color: #4ab6404f;
     border-radius: 50%;
     border-style: solid;
-    border-width: 7.5px;
+    border-width: 5px;
 }
 .in-active-spin .spinner-text {
     border-color: rgba(255, 0, 43, 0.178);
 }
 .active-spin, .in-active-spin
 {
-    margin-left:15%;
+    /* margin-left:15%; */
 }

@@ -11,8 +11,8 @@ export class DrivesComponent implements OnInit {
 
   // color: ThemePalette = 'primary';
   mode: ProgressSpinnerMode = 'determinate';
-  value = 80;
-  value1 = 55;
+  value = 100;
+  value1 = 100;
   constructor() { }
 
   ngOnInit(): void {

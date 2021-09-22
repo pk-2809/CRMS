@@ -1,31 +1,34 @@
 <div class="main-container">
   <div class="container" fxLayout="column" fxLayoutAlign="space-between none">
-    <div class="header-wrap" fxFlex="10" fxLayout="row">
-      <div class="heading" fxFlex="20" fxLayout="column" fxLayoutAlign="center center">
+    <!-- <div class="breadcrum-wrap" fxFlex="6" fxLayout="row">
+      <p>Drives</p>
+    </div> -->
+    <div class="header-wrap" fxFlex="15" fxLayout="row">
+      <div class="heading" fxFlex="20" fxLayout="column" fxLayoutAlign="center start">
         <h1>Drives</h1>
       </div>
-      <div fxFlex="80" fxLayout="row" fxLayoutAlign="center center">
-        <mat-card class="drive-head-card" fxLayout="row" fxLayoutAlign="space-around center">
+      <div fxFlex="80" fxLayout="row" fxLayoutGap="2.5%" fxLayoutAlign="start end">
+        <mat-card class="drive-head-card" fxLayout="row" fxLayoutGap="10%" fxLayoutAlign="space-around center">
           <div>
             <h2>Active</h2>
-            <p>XXXXXXXXX</p>
+            <h2>654321</h2>
           </div>
-          <!-- <div class="active-spin">
+          <div class="active-spin">
             <span class="spinner-text">{{value}}%</span>
-            <mat-spinner [diameter]="70" [mode]="mode" [value]="value">
+            <mat-spinner [diameter]="65" [mode]="mode" [strokeWidth]="6" [value]="value">
             </mat-spinner>
-          </div> -->
+          </div>
         </mat-card>
-        <mat-card class="drive-head-card" fxLayout="row" fxLayoutAlign="space-around center">
+        <mat-card class="drive-head-card" fxLayout="row" fxLayoutGap="10%" fxLayoutAlign="space-around center">
           <div>
             <h2>In-Active</h2>
-            <p>XXXXXXXXX</p>
+            <h2>123456</h2>
           </div>
-          <!-- <div class="in-active-spin">
+          <div class="in-active-spin">
             <span class="spinner-text">{{value1}}%</span>
-            <mat-spinner [diameter]="70" [mode]="mode" [value]="value1">
+            <mat-spinner [diameter]="65" [strokeWidth]="6" [mode]="mode" [value]="value1">
             </mat-spinner>
-          </div> -->
+          </div>
         </mat-card>
       </div>
     </div>

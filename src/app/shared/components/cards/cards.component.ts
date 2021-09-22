@@ -10,7 +10,7 @@ export class CardsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.drives = ["Saab", "Volvo", "BMW", "Saab", "Volvo", "BMW", "Saab", "Volvo", "BMW", "Volvo", "BMW", "Saab", "Volvo", "BMW", "Saab", "Volvo"];
+    this.drives = ["Volvo", "BMW", "Saab", "Volvo", "BMW", "Volvo", "BMW", "Saab", "Volvo", "BMW", "Saab", "Volvo"];
     // console.log(this.drives)
   }
 
