@@ -27,20 +27,20 @@
 </div>
 <div class="card-wrap mat-elevation-z9" fxLayout="row">
     <mat-card class="drive-card" *ngFor="let drive of drives; let i = index;" fxLayout="row"
-        fxLayoutAlign="space-around center">
+        fxLayoutAlign="center center" fxLayoutGap="5%">
         <div fxFlex="20">
             <div class="drive-card-circle"></div>
         </div>
-        <mat-card-content fxFlex="70">
-            <h4>{{i}} Company Name</h4>
-            <div fxLayout="row" fxLayoutGap="20%">
+        <mat-card-content fxFlex="70" class="h-80">
+            <h4 class="txt-ovrflw drive-head">{{drive}}</h4>
+            <div fxLayout="row" fxLayoutGap="8%">
                 <div fxLayout="column" fxLayoutAlign="space-around start">
-                    <h6>Drive Name</h6>
-                    <h6>Status</h6>
+                    <p>Drive Name</p>
+                    <p>Status</p>
                 </div>
                 <div fxLayout="column" fxLayoutAlign="space-around start">
-                    <p>XXXXXXXX</p>
-                    <p>YYYYYYYY</p>
+                    <p>QWERTYUIOP</p>
+                    <p>ACTIVE</p>
                 </div>
             </div>
         </mat-card-content>

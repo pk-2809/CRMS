@@ -1,18 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
 
+@font-face
+{
+    font-family: MyMontserrat;
+    src:url(./assets/fonts/Montserrat-Bold.ttf) format('truetype');
+}
+@font-face
+{
+    font-family: MyNunito;
+    src: url(./assets/fonts/font-nunito/Nunito-SemiBold.ttf) format('truetype');
+}
 /* #E24439 , #F5736F */
-
+*
+{
+    font-family: MyNunito;
+}
 
 /* -------------------------- Common Component ------------------------------*/
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+body { margin: 0;}
+.mat-typography h1,.mat-typography h2,.mat-typography h3,.mat-typography h4,.mat-typography h5,.mat-typography h6
+{
+    font-family: MyMontserrat;
+    margin: 0px;
+    color:#6c757d;
+}
+.mat-typography p
+{
+    margin:0px;
+    color:#313538;
+}
 .mat-typography h1
 {
     font-size: 35px;
-    font-weight: 600;
 }
-.mat-typography h1,.mat-typography h2,.mat-typography h3,.mat-typography h4,.mat-typography h5,.mat-typography h6,.mat-typography p
+.mat-typography h2
 {
-    margin: 0px;
+    font-size: 25px;
+}
+.mat-typography h3
+{
+    font-size: 20px;
+}
+.mat-typography h4
+{
+    font-size: 17px;
+}
+.mat-typography h5
+{
+    font-size: 10px;
+}
+.mat-typography h6
+{
+    font-size: 5px;
 }
 .h-w-100
 {
@@ -22,6 +62,23 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .w-100
 {
     width: 100%;
+}
+.h-80
+{
+    height:80%;
+}
+.txt-ovrflw
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.m-t-15{
+    margin-top: 1.5%;
+}
+.m-l-15
+{
+    margin-left: 15%;
 }
 .mat-form-field-appearance-outline .mat-form-field-infix {
     padding:10px 0px 10px 0px;
@@ -67,7 +124,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     border-radius: 8px !important;
     padding: 0px !important;
 }
-/* -------------------------- Mat-Table ------------------------------*/
+/* ------------------------------------- Mat-Table ----------------------------------------*/
 table{
     width: 100%;
 }
@@ -145,6 +202,16 @@ table{
 {
     height:80%;
 } */
+
+/* -------------------------------------- Username Component -------------------------------------*/
+.username
+{
+    padding: 5px 10px !important;
+    min-width: 180px;
+    text-align: center;
+}
+
+
 /* -------------------------------------- Cards Component -------------------------------------*/
 .card-wrap
 {
@@ -177,6 +244,12 @@ table{
     position: relative;
     bottom: 0;
     width: 100%;
+}
+.drive-head
+{
+    height: 30%;
+    margin-bottom: 2.5% !important;
+    margin-right: 5% !important;
 }
 /* ------------------------------------------ Search Box ---------------------------------------*/
 .search-box .mat-form-field-wrapper .mat-form-field-underline::before, .search-box .mat-form-field-wrapper .mat-form-field-underline .mat-form-field-ripple

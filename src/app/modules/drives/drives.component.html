@@ -7,11 +7,13 @@
       <div class="heading" fxFlex="20" fxLayout="column" fxLayoutAlign="center start">
         <h1>Drives</h1>
       </div>
-      <div fxFlex="80" fxLayout="row" fxLayoutGap="2.5%" fxLayoutAlign="start end">
+      <div fxFlex="70" fxLayout="row" fxLayoutGap="2.5%" fxLayoutAlign="start end">
         <mat-card class="drive-head-card" fxLayout="row" fxLayoutGap="10%" fxLayoutAlign="space-around center">
           <div>
-            <h2>Active</h2>
-            <h2>654321</h2>
+            <h4>Active</h4>
+            <div class="m-l-15">
+              <h2>654321</h2>
+            </div>
           </div>
           <div class="active-spin">
             <span class="spinner-text">{{value}}%</span>
@@ -21,8 +23,10 @@
         </mat-card>
         <mat-card class="drive-head-card" fxLayout="row" fxLayoutGap="10%" fxLayoutAlign="space-around center">
           <div>
-            <h2>In-Active</h2>
-            <h2>123456</h2>
+            <h4>In-Active</h4>
+            <div class="m-l-15">
+              <h2>123456</h2>
+            </div>
           </div>
           <div class="in-active-spin">
             <span class="spinner-text">{{value1}}%</span>
@@ -30,6 +34,9 @@
             </mat-spinner>
           </div>
         </mat-card>
+      </div>
+      <div class="m-t-15" fxFlex="15" fxLayout="column" fxLayoutAlign="start end">
+        <app-username></app-username>
       </div>
     </div>
     <div>
